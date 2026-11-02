@@ -1,0 +1,19 @@
+{
+    "name": "radianz/laravel",
+    "description": "Send Laravel application errors to the Radianz Error Inbox.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.2 <8.6",
+        "laravel/framework": "^12.0 || ^13.0",
+        "guzzlehttp/guzzle": "^7.8.2 || ^8.0"
+    },
+    "autoload": {
+        "psr-4": { "Radianz\\Laravel\\": "src/" }
+    },
+    "extra": {
+        "laravel": {
+            "providers": ["Radianz\\Laravel\\RadianzServiceProvider"]
+        }
+    }
+}
